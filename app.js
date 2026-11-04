@@ -18,9 +18,24 @@
   }).join('');
 
   const illustrationsAfter = new Map([
-    ['8-3', { src: '/manus-storage/async-images/QiJseE6I1lwEgygQDtpeC2/image-1.webp', alt: 'جيم يشاهد البحّار العجوز يصل إلى النُزُل ومعه صندوقه البحري', caption: 'The old sailor arrives at the inn.', captionAr: 'وصول البحّار العجوز إلى النُزُل.' }],
-    ['10-1', { src: '/manus-storage/async-images/h1DmaoxxTJWfUnzonmZOME/image-1.webp', alt: 'الدكتور ليفزي يطلب من الكابتن الهدوء قرب الدرج إلى غرفة والد جيم', caption: 'Dr Livesey stands up to the Captain.', captionAr: 'الدكتور ليفزي يواجه الكابتن.' }],
-    ['11-1', { src: '/manus-storage/async-images/h1DmaoxxTJWfUnzonmZOME/image-2.webp', alt: 'جيم يشاهد الكابتن يتعرف على بلاك دوغ في النُزُل', caption: 'Black Dog meets the Captain.', captionAr: 'بلاك دوغ يلتقي بالكابتن.' }]
+    ['8-3', {
+      src: './old-sailor-arrives.webp',
+      alt: 'Jim watches the old sailor arrive at the inn with his sea chest.',
+      caption: 'The old sailor arrives at the inn.',
+      captionAr: 'وصول البحّار العجوز إلى النُزُل.'
+    }],
+    ['10-1', {
+      src: './dr-livesey-confronts-captain.webp',
+      alt: 'Dr Livesey tells the Captain to be quiet.',
+      caption: 'Dr Livesey stands up to the Captain.',
+      captionAr: 'الدكتور ليفزي يواجه الكابتن.'
+    }],
+    ['11-1', {
+      src: './black-dog-meets-captain.webp',
+      alt: 'Black Dog meets the Captain at the inn.',
+      caption: 'Black Dog meets the Captain.',
+      captionAr: 'بلاك دوغ يلتقي بالكابتن.'
+    }]
   ]);
   const storyContent = [];
   lesson.pages.forEach(page => {
