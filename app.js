@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const lesson = window.LESSON;
+  const storyTranslations = window.STORY_TRANSLATIONS || {};
   if (!lesson) return;
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -41,7 +42,8 @@
   lesson.pages.forEach(page => {
     storyContent.push(`<section class="source-page" aria-label="Book page ${page.page}"><div class="page-marker" aria-hidden="true">BOOK PAGE ${page.page}</div>`);
     page.paragraphs.forEach((text, index) => {
-      storyContent.push(`<p class="story-paragraph">${text}</p>`);
+      const translation = storyTranslations[`${page.page}-${index}`];
+storyContent.push(`<p class="story-paragraph">${text}${translation ? `<span class="translation ar-helper" lang="ar" dir="rtl">${translation}</span>` : ''}</p>`);
       const image = illustrationsAfter.get(`${page.page}-${index}`);
       if (image) storyContent.push(`<figure class="story-illustration"><img src="${image.src}" alt="${image.alt}" loading="lazy"><figcaption><span lang="en" dir="ltr">${image.caption}</span><span class="ar-helper" lang="ar" dir="rtl">${image.captionAr}</span></figcaption></figure>`);
     });
