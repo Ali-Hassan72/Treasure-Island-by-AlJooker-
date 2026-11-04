@@ -1,0 +1,100 @@
+window.LESSON = {
+  pages: [
+    { page: 8, paragraphs: [
+      "My name is Jim Hawkins. I am going to tell you a story about pirates and treasure. This story started a long time ago, in the year 1756, when I was twelve years old.",
+      "My father owned an inn called The Admiral Benbow. It was a small inn on the south coast of England. The Admiral Benbow was not very busy. We did not get many customers.",
+      "Sometimes travellers stayed at the inn. They could buy a meal and have something to drink. They usually stayed for only one night. But I remember one traveller who stayed at The Admiral Benbow for several weeks.",
+      "I remember the day he arrived. A horse and cart came along the road and stopped outside the inn. An old sailor got down from the cart and came to the inn door. He was singing a sailor's song.",
+      "Fifteen men on the dead man's chest –\nYo-ho-ho and a bottle of rum!",
+      "The old sailor knocked loudly on the inn door and my father opened it. I stood next to my father and looked at the sailor.",
+      "The man was tall and his face was brown from the sun. His hair was white. It was tied in a tail at the back of his head. He wore an old blue coat.",
+      "‘Bring me a glass of rum,’ the sailor said loudly to my father.",
+      "I looked at the horse and cart. There was a wooden box on the cart – the sailor's wooden chest. It was big and it looked heavy."
+    ]},
+    { page: 9, paragraphs: [
+      "‘Do many people stay here?’ the sailor asked my father.",
+      "‘Not many,’ my father replied. ‘We always have empty rooms.’",
+      "‘Good. I will stay here,’ said the sailor. ‘I will stay here for several weeks.’ He took some money out of his pocket. ‘Take this money. Tell me when I have spent it all.’",
+      "He gave my father four gold coins.",
+      "‘Thank you, sir,’ said my father. ‘May I ask your name?’",
+      "‘Call me Captain,’ said the sailor. ‘Now, bring my chest and show me my room.’",
+      "My father carried the heavy wooden chest into the inn. He carried it to the Captain's room. I did not know what was in the chest, but it looked very heavy.",
+      "The Captain stayed for several weeks. I was afraid of him. He drank bottles of rum and he was drunk every day. He sang songs and shouted loudly when he was drunk.",
+      "‘Boy!’ he shouted. ‘Bring me more rum!’",
+      "When I had brought the rum he told me stories. He told stories about pirates and ships. He told me about robbing ships and killing men. Then he sang sailors' songs.",
+      "‘Jim,’ the Captain often said to me, ‘Jim – look out for a man with one leg. Watch for a man with one leg. Tell me if you see him. Do this and I'll pay you well.’",
+      "I said nothing. I was too afraid to speak. Who was this man with one leg?",
+      "Winter came and my father fell sick. He was very ill and the doctor came to see him every day. The doctor's name was Dr Livesey. He said my father did not have long to live.",
+      "My mother and I were very busy. We had to look after"
+    ]},
+    { page: 10, paragraphs: [
+      "the inn while my father lay ill in bed. But my father did not get much rest. The Captain drank rum and sang and shouted.",
+      "‘Please be quiet,’ Dr Livesey said to the Captain. ‘There is a very sick man upstairs.’",
+      "‘What?’ shouted the Captain. ‘What did you say? No one tells me what to do!’ He pulled a knife out of the pocket of his coat.",
+      "‘Put that knife down at once,’ Dr Livesey said. He stared hard at the Captain. ‘Put that knife down. Or I will call the soldiers to arrest you.’",
+      "The Captain stared at Dr Livesey, but he put down the knife. He drank another glass of rum.",
+      "‘And if you drink rum every day, you will soon be dead,’ the doctor went on.",
+      "The Captain was quiet for several days.",
+      "Dr Livesey was visiting my father one morning when a stranger came to the inn. The Doctor was upstairs with my father and mother. I was alone downstairs, in the main room of the inn.",
+      "The stranger opened the front door and looked at me. I did not like the man. He was dirty and had a ragged beard. His face was hard and cruel.",
+      "‘Where's Captain Bill?’ he asked.",
+      "‘I don't know Captain Bill,’ I replied. I did not want to tell the man anything.",
+      "‘I know he's staying here,’ said the stranger. ‘I want to talk to him.’",
+      "The Captain came into the room. He did not know the stranger was there."
+    ]},
+    { page: 11, paragraphs: [
+      "‘Hello, Billy,’ said the stranger.",
+      "‘Black Dog!’ said the Captain. His face went white. ‘What do you want?’",
+      "‘We must talk,’ said Black Dog. Then the stranger shouted to me, ‘Get us some rum, boy.’",
+      "I went into the kitchen to get some rum. The Captain and Black Dog were talking. Suddenly they started to shout.",
+      "I went back into the room. The Captain had a short, heavy sword called a cutlass. He raised the cutlass and ran towards Black Dog. Black Dog ran out of the inn. The Captain chased him and swung his cutlass at Black Dog's head. But the Captain didn't hit him. The cutlass hit the wooden sign above the inn door. Black Dog escaped and ran down the road.",
+      "The Captain stopped running and turned round. His face was a terrible purple colour. He stepped back into the inn and fell on the floor.",
+      "‘Dr Livesey!’ I called. ‘Dr Livesey! Help!’",
+      "Dr Livesey came downstairs from my father's room. He looked closely at the Captain.",
+      "‘I said that rum is going to kill him,’ Dr Livesey said. ‘We must put him to bed. Let him sleep.’",
+      "I helped the Doctor to put the Captain into his bed. We now had two sick men in the house and I looked after them both. But soon there was only one sick man because my father died suddenly one night."
+    ]}
+  ],
+  vocabulary: [
+    { word: "inn", type: "noun", meaning: "نُزُل صغير للمسافرين", example: "My father owned an inn called The Admiral Benbow.", exampleAr: "كان والدي يملك نُزُلًا اسمه ذا أدميرال بنبو." },
+    { word: "traveller", type: "noun", meaning: "مسافر", example: "Sometimes travellers stayed at the inn.", exampleAr: "كان بعض المسافرين يقيمون أحيانًا في النُزُل." },
+    { word: "sailor", type: "noun", meaning: "بحّار", example: "An old sailor got down from the cart.", exampleAr: "نزل بحّار عجوز من العربة." },
+    { word: "chest", type: "noun", meaning: "صندوق كبير، وصندوق البحّارة أحيانًا", example: "There was a wooden box on the cart – the sailor's wooden chest.", exampleAr: "كان على العربة صندوق خشبي، وهو صندوق البحّار." },
+    { word: "stay", type: "verb", meaning: "يقيم أو يمكث", example: "I will stay here for several weeks.", exampleAr: "سأقيم هنا عدة أسابيع." },
+    { word: "drunk", type: "adjective", meaning: "مخمور أو سكران", example: "He was drunk every day.", exampleAr: "كان مخمورًا كل يوم." },
+    { word: "look out for", type: "phrasal verb", meaning: "انتبه إلى أو راقب بحثًا عن", example: "look out for a man with one leg.", exampleAr: "انتبه إلى رجل له ساق واحدة." },
+    { word: "fell sick", type: "verb phrase", meaning: "مَرِض", example: "Winter came and my father fell sick.", exampleAr: "حلّ الشتاء ومَرِض والدي." },
+    { word: "quiet", type: "adjective", meaning: "هادئ؛ وتأتي في الأمر بمعنى التزم الهدوء", example: "Please be quiet.", exampleAr: "من فضلك التزم الهدوء." },
+    { word: "stranger", type: "noun", meaning: "شخص غريب لا تعرفه", example: "A stranger came to the inn.", exampleAr: "جاء شخص غريب إلى النُزُل." },
+    { word: "ragged", type: "adjective", meaning: "بالٍ أو ممزق", example: "He was dirty and had a ragged beard.", exampleAr: "كان متسخًا وله لحية أشعثة." },
+    { word: "cutlass", type: "noun", meaning: "سيف قصير وثقيل كان يُستخدم على السفن", example: "The Captain had a short, heavy sword called a cutlass.", exampleAr: "كان مع الكابتن سيف قصير وثقيل يُسمى كَتلاس." }
+  ],
+  shadowing: [
+    "My name is Jim Hawkins.",
+    "I am going to tell you a story about pirates and treasure.",
+    "The Admiral Benbow was not very busy.",
+    "Sometimes travellers stayed at the inn.",
+    "An old sailor got down from the cart.",
+    "The man was tall and his face was brown from the sun.",
+    "‘Call me Captain,’ said the sailor.",
+    "He was drunk every day.",
+    "Look out for a man with one leg.",
+    "Winter came and my father fell sick.",
+    "Please be quiet.",
+    "He pulled a knife out of the pocket of his coat.",
+    "I did not want to tell the man anything.",
+    "Suddenly they started to shout.",
+    "The Captain chased him and swung his cutlass at Black Dog's head.",
+    "My father died suddenly one night."
+  ],
+  quiz: [
+    { q: "Where was the Admiral Benbow inn?", qAr: "أين كان نُزُل أدميرال بنبو؟", options: ["On the south coast of England", "In the north of Scotland", "On a small island"], optionsAr: ["على الساحل الجنوبي لإنجلترا", "في شمال اسكتلندا", "على جزيرة صغيرة"], answer: 0, why: "Jim says the inn was on the south coast of England." },
+    { q: "What did the old sailor bring in the cart?", qAr: "ماذا أحضر البحّار العجوز في العربة؟", options: ["A heavy wooden chest", "A boat", "A bag of books"], optionsAr: ["صندوقًا خشبيًا ثقيلًا", "قاربًا", "حقيبة كتب"], answer: 0, why: "The cart carried the sailor's big, heavy wooden chest." },
+    { q: "What name did the sailor ask people to use?", qAr: "ما الاسم الذي طلب البحّار أن ينادوه به؟", options: ["Black Dog", "Captain", "Dr Livesey"], optionsAr: ["بلاك دوغ", "الكابتن", "الدكتور ليفزي"], answer: 1, why: "He said, ‘Call me Captain.’" },
+    { q: "What did the Captain ask Jim to watch for?", qAr: "عمّن طلب الكابتن من جيم أن يراقب الطريق؟", options: ["A man with one leg", "A doctor on a horse", "A ship at sea"], optionsAr: ["رجل له ساق واحدة", "طبيبًا على حصان", "سفينة في البحر"], answer: 0, why: "The Captain repeatedly told Jim to watch for a man with one leg." },
+    { q: "What does “look out for” mean here?", qAr: "ما معنى look out for في هذا السياق؟", options: ["Watch for", "Pay for", "Ask about"], optionsAr: ["راقب بحثًا عن", "ادفع ثمن", "اسأل عن"], answer: 0, why: "The Captain asks Jim to watch for a particular man." },
+    { q: "Why did Dr Livesey ask the Captain to be quiet?", qAr: "لماذا طلب الدكتور ليفزي من الكابتن أن يهدأ؟", options: ["A very sick man was upstairs", "The inn was closing", "The horse was sleeping"], optionsAr: ["كان هناك رجل مريض جدًا في الطابق العلوي", "كان النُزُل يُغلق", "كان الحصان نائمًا"], answer: 0, why: "Dr Livesey says there is a very sick man upstairs: Jim's father." },
+    { q: "What is a cutlass?", qAr: "ما الـcutlass؟", options: ["A short, heavy sword", "A wooden chest", "A sailor's coat"], optionsAr: ["سيف قصير وثقيل", "صندوق خشبي", "معطف بحّار"], answer: 0, why: "The chapter describes it as a short, heavy sword." },
+    { q: "Who died suddenly one night?", qAr: "من الذي مات فجأة ذات ليلة؟", options: ["Black Dog", "Dr Livesey", "Jim's father"], optionsAr: ["بلاك دوغ", "الدكتور ليفزي", "والد جيم"], answer: 2, why: "The last sentence of the chapter says Jim's father died suddenly one night." }
+  ]
+};
