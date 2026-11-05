@@ -117,7 +117,7 @@ $$('[data-speak]').forEach(button => {
 
     const number = String(Number(button.dataset.speak) + 1).padStart(2, '0');
 
-    shadowPlayer.src = `/audio/shadowing/phrase-${number}.mp3`;
+    shadowPlayer.src = `./audio/shadowing/phrase-${number}.mp3`;
     shadowPlayer.load();
 
     shadowPlayer.play().catch(() => {
