@@ -75,26 +75,58 @@ storyContent.push(`<p class="story-paragraph">${text}${translation ? `<span clas
     </div>`).join('');
   updateShadowProgress();
 
-  let activeUtterance = null;
-  $$('[data-speak]').forEach(button => button.addEventListener('click', () => {
-    if (!('speechSynthesis' in window)) {
-      showToast('ميزة القراءة غير متاحة في هذا المتصفح. استخدم التسجيل الكامل أعلاه.');
+ const shadowPlayer = new Audio();
+shadowPlayer.preload = 'none';
+
+let activeShadowButton = null;
+
+const resetShadowButton = () => {
+  if (!activeShadowButton) return;
+
+  activeShadowButton.textContent = '▶';
+  activeShadowButton.classList.remove('is-playing');
+  activeShadowButton.closest('.shadow-row')?.classList.remove('is-playing');
+
+  activeShadowButton = null;
+};
+
+shadowPlayer.addEventListener('ended', resetShadowButton);
+
+shadowPlayer.addEventListener('error', () => {
+  resetShadowButton();
+  showToast('تعذّر تشغيل هذا المقطع. أعد المحاولة.');
+});
+
+$$('[data-speak]').forEach(button => {
+  button.addEventListener('click', () => {
+
+    if (activeShadowButton === button && !shadowPlayer.paused) {
+      shadowPlayer.pause();
+      resetShadowButton();
       return;
     }
-    window.speechSynthesis.cancel();
-    const phrase = lesson.shadowing[Number(button.dataset.speak)];
-    activeUtterance = new SpeechSynthesisUtterance(phrase);
-    activeUtterance.lang = 'en-US';
-    activeUtterance.rate = 0.88;
-    activeUtterance.pitch = 1;
-    button.textContent = '…';
-    const currentButton = button;
-    activeUtterance.onend = activeUtterance.onerror = () => {
-      currentButton.textContent = '▶';
-      activeUtterance = null;
-    };
-    window.speechSynthesis.speak(activeUtterance);
-  }));
+
+    shadowPlayer.pause();
+    resetShadowButton();
+
+    activeShadowButton = button;
+
+    button.textContent = 'Ⅱ';
+    button.classList.add('is-playing');
+    button.closest('.shadow-row')?.classList.add('is-playing');
+
+    const number = String(Number(button.dataset.speak) + 1).padStart(2, '0');
+
+    shadowPlayer.src = `/audio/shadowing/phrase-${number}.mp3`;
+    shadowPlayer.load();
+
+    shadowPlayer.play().catch(() => {
+      resetShadowButton();
+      showToast('تعذّر تشغيل هذا المقطع. أعد المحاولة.');
+    });
+
+  });
+});
   $$('[data-complete]').forEach(input => input.addEventListener('change', () => {
     const index = Number(input.dataset.complete);
     if (input.checked) completed.add(index); else completed.delete(index);
