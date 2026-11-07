@@ -7,8 +7,8 @@ window.CHAPTER_02 = {
   heroDescription: "تابع مع جيم هوكنز أسرار الكابتن وظهور البقعة السوداء.",
   pageStart: 13,
   pageEnd: 17,
-  audioPath: "/audio/chapter-02/the-black-spot-original.wav",
-  shadowingAudioPrefix: "/audio/chapter-02/shadowing/phrase-",
+  audioPath: "./audio/chapter-02/the-black-spot-original.wav",
+  shadowingAudioPrefix: "./audio/chapter-02/shadowing/phrase-",
   pages: [
     { page: 13, paragraphs: [
       "Dr Livesey was very kind. He helped us make arrangements for my father's funeral.",
