@@ -23,7 +23,7 @@ window.CHAPTER_04 = {
         original: "Old Anchor Inn, Bristol,\n1 March 1756\n\nDear Dr Livesey,\n\nI have chartered a ship. The ship’s name is the Hispaniola. I have also hired a crew of twenty sailors.\n\nI have had some good luck. A ship’s cook came to see me. His name is Long John Silver. He is an excellent man. He chose the crew for me and will sail with us. A second ship will sail to Treasure Island if we do not return in two months.\n\nLong John Silver was a sailor for many years. He was badly injured in a sea battle and lost a leg. He has not sailed for some time. He got home to Bristol, but he wants to sail again.\n\nPlease come to Bristol straight away and bring Jim Hawkins.\n\nJohn Trelawney",
         translation: "نُزُل المرساة القديمة، بريستول.\n1 مارس 1756.\n\nعزيزي الدكتور ليفزي،\n\nاستأجرت سفينة. اسم السفينة هو هيسبانيولا. كما استأجرت طاقمًا من عشرين بحّارًا.\n\nلقد حالفني بعض الحظ. جاء طباخ سفينة لزيارتي. اسمه لونغ جون سيلفر. إنه رجل ممتاز. اختار الطاقم من أجلي وسيبحر معنا. ستبحر سفينة ثانية إلى جزيرة الكنز إذا لم نعد خلال شهرين.\n\nكان لونغ جون سيلفر بحّارًا لسنوات كثيرة. أُصيب إصابة بالغة في معركة بحرية وفقد ساقًا. لم يبحر منذ مدة. عاد إلى بيته في بريستول، لكنه يريد أن يبحر من جديد.\n\nأرجو أن تأتي إلى بريستول فورًا وأن تحضر جيم هوكنز.\n\nجون تريلاوني",
         image: {
-          src: "/manus-storage/chapter-04-trelawney-letter_df382b59.jpg",
+          src: "./images/chapter-04-trelawney-letter.jpg",
           alt: "صورة الرسالة الأصلية من سكواير تريلاوني إلى الدكتور ليفزي، مؤرخة في بريستول في 1 مارس 1756",
           caption: "Squire Trelawney’s letter to Dr Livesey.",
           captionAr: "رسالة سكواير تريلاوني إلى الدكتور ليفزي."
@@ -93,7 +93,7 @@ window.CHAPTER_04 = {
   },
   illustrationsOnPage: {
     23: {
-      src: "/manus-storage/chapter-04-silver-ship-illustration_354a9f07.jpg",
+      src: "./images/chapter-04-silver-ship-illustration.jpg",
       alt: "الرسم الأصلي للونغ جون سيلفر وهو يشير إلى السفن حوله ويحدث جيم عن البلدان والبضائع",
       caption: "Long John Silver pointed to the ships around us and told me stories about them. I listened and learned.",
       captionAr: "أشار لونغ جون سيلفر إلى السفن من حولنا، وأخبر جيم قصصًا عنها. استمع جيم وتعلّم."
