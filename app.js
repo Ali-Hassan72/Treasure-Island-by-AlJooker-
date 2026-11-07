@@ -1,55 +1,139 @@
 (() => {
   'use strict';
-  const lesson = window.LESSON;
   const storyTranslations = window.STORY_TRANSLATIONS || {};
-  if (!lesson) return;
+  const params = new URLSearchParams(window.location.search);
+  const requestedChapter = Number(params.get('chapter')) || 1;
+  const lesson = (window.LESSONS || {})[requestedChapter] || window.LESSON;
+
+if (!lesson) return;
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const futureTitles = [
-    'The Black Spot', "The Captain's Papers", 'Long John Silver', 'The Apple Barrel',
-    'Murder', 'The Man on the Island', 'The Stockade', 'The Fight with the Pirates',
-    "Ben Gunn's Boat", 'Aboard the Hispaniola', "The Pirates' Prisoner",
-    'The Search for the Treasure', "Flint's Treasure"
-  ];
+  'The Black Spot',
+  "The Captain's Papers",
+  'Long John Silver',
+  'The Apple Barrel',
+  'Murder',
+  'The Man on the Island',
+  'The Stockade',
+  'The Fight with the Pirates',
+  "Ben Gunn's Boat",
+  'Aboard the Hispaniola',
+  "The Pirates' Prisoner",
+  'The Search for the Treasure',
+  "Flint's Treasure"
+];
 
-  // The book outline is shown for orientation only; future lessons are not written yet.
-  $('#future-chapters').innerHTML = futureTitles.map((title, index) => {
-    const number = String(index + 2).padStart(2, '0');
-    return `<div class="chapter-link future" aria-disabled="true" title="سيُضاف هذا الفصل لاحقًا"><span class="chapter-number">${number}</span><span class="chapter-title">${title}</span><span class="chapter-state" aria-hidden="true">⌑</span></div>`;
-  }).join('');
+const chapterNav = $('#future-chapters');
+const chapterLinks = [];
 
-  const illustrationsAfter = new Map([
-    ['8-3', {
-      src: './old-sailor-arrives.webp',
-      alt: 'Jim watches the old sailor arrive at the inn with his sea chest.',
-      caption: 'The old sailor arrives at the inn.',
-      captionAr: 'وصول البحّار العجوز إلى النُزُل.'
-    }],
-    ['10-1', {
-      src: './dr-livesey-confronts-captain.webp',
-      alt: 'Dr Livesey tells the Captain to be quiet.',
-      caption: 'Dr Livesey stands up to the Captain.',
-      captionAr: 'الدكتور ليفزي يواجه الكابتن.'
-    }],
-    ['11-1', {
-      src: './black-dog-meets-captain.webp',
-      alt: 'Black Dog meets the Captain at the inn.',
-      caption: 'Black Dog meets the Captain.',
-      captionAr: 'بلاك دوغ يلتقي بالكابتن.'
-    }]
-  ]);
-  const storyContent = [];
-  lesson.pages.forEach(page => {
-    storyContent.push(`<section class="source-page" aria-label="Book page ${page.page}"><div class="page-marker" aria-hidden="true">BOOK PAGE ${page.page}</div>`);
-    page.paragraphs.forEach((text, index) => {
-      const translation = storyTranslations[`${page.page}-${index}`];
-storyContent.push(`<p class="story-paragraph">${text}${translation ? `<span class="translation ar-helper" lang="ar" dir="rtl">${translation}</span>` : ''}</p>`);
-      const image = illustrationsAfter.get(`${page.page}-${index}`);
-      if (image) storyContent.push(`<figure class="story-illustration"><img src="${image.src}" alt="${image.alt}" loading="lazy"><figcaption><span lang="en" dir="ltr">${image.caption}</span><span class="ar-helper" lang="ar" dir="rtl">${image.captionAr}</span></figcaption></figure>`);
-    });
-    storyContent.push('</section>');
+for (let number = 2; number <= 14; number++) {
+  const chapterData = (window.LESSONS || {})[number];
+  const title = chapterData?.title || futureTitles[number - 2];
+  const available = Boolean(chapterData);
+  const active = number === lesson.id;
+
+  chapterLinks.push(`
+    <a
+      class="chapter-link ${active ? 'active' : ''} ${available ? '' : 'future'}"
+      href="${available ? `./?chapter=${number}` : '#'}"
+      ${active ? 'aria-current="page"' : ''}
+      ${!available ? 'aria-disabled="true"' : ''}
+      title="${available ? title : 'سيُضاف هذا الفصل لاحقًا'}"
+    >
+      <span class="chapter-number">${String(number).padStart(2, '0')}</span>
+      <span class="chapter-title">${title}</span>
+      <span class="chapter-state" aria-hidden="true">
+        ${available ? '●' : '⌑'}
+      </span>
+    </a>
+  `);
+}
+
+chapterNav.innerHTML = chapterLinks.join('');
+
+const comingNote = $('.coming-note');
+if (comingNote) {
+  comingNote.hidden = Object.keys(window.LESSONS || {}).length >= 14;
+}
+
+  const illustrationsAfter = lesson.illustrationsAfter || {};
+const illustrationsOnPage = lesson.illustrationsOnPage || {};
+
+const storyContent = [];
+
+function addIllustration(image) {
+  if (!image) return '';
+
+  return `
+    <figure class="story-illustration">
+      <img
+        src="${image.src}"
+        alt="${image.alt || ''}"
+        loading="lazy"
+      >
+      <figcaption>
+        <span lang="en" dir="ltr">${image.caption || ''}</span>
+        <span class="ar-helper" lang="ar" dir="rtl">
+          ${image.captionAr || ''}
+        </span>
+      </figcaption>
+    </figure>
+  `;
+}
+
+lesson.pages.forEach(page => {
+  storyContent.push(`
+    <section class="source-page" aria-label="Book page ${page.page}">
+      <div class="page-marker">BOOK PAGE ${page.page}</div>
+  `);
+
+  // الصور التي تظهر في بداية الصفحة
+  storyContent.push(addIllustration(illustrationsOnPage[page.page]));
+
+  page.paragraphs.forEach((paragraph, index) => {
+    const key = `${page.page}-${index}`;
+
+    const translation =
+      lesson.translationsByPage?.[page.page]?.[index] ||
+      (lesson.id === 1 ? storyTranslations[key] : '');
+
+    storyContent.push(`
+      <p class="story-paragraph">
+        ${paragraph}
+        ${translation ? `
+          <span class="translation ar-helper" lang="ar" dir="rtl">
+            ${translation}
+          </span>
+        ` : ''}
+      </p>
+    `);
+
+    // الصور التي تظهر بعد فقرة معينة
+    storyContent.push(addIllustration(illustrationsAfter[key]));
   });
-  $('#story-text').innerHTML = storyContent.join('');
+
+  // عرض الرسائل أو المستندات المرفقة بالفصل
+  if (page.embeddedDocument) {
+    const doc = page.embeddedDocument;
+
+    storyContent.push(`
+      <div class="embedded-document">
+        ${addIllustration(doc.image)}
+        <h3>${doc.title || ''}</h3>
+        <p class="ar-helper" lang="ar" dir="rtl">${doc.titleAr || ''}</p>
+        <pre>${doc.original || ''}</pre>
+        <p class="translation ar-helper" lang="ar" dir="rtl">
+          ${doc.translation || ''}
+        </p>
+      </div>
+    `);
+  }
+
+  storyContent.push('</section>');
+});
+
+$('#story-text').innerHTML = storyContent.join('');
 
   $('#vocab-grid').innerHTML = lesson.vocabulary.map((item, index) => `
     <article class="vocab-card">
@@ -59,7 +143,7 @@ storyContent.push(`<p class="story-paragraph">${text}${translation ? `<span clas
       <div class="vocab-example-ar ar-helper" lang="ar" dir="rtl">${item.exampleAr}</div>
     </article>`).join('');
 
-  const completedKey = 'treasure-lesson-01-shadowing';
+  const completedKey = `treasure-lesson-${String(lesson.id).padStart(2, '0')}-shadowing`;
   let completed = new Set();
   try { completed = new Set(JSON.parse(localStorage.getItem(completedKey) || '[]')); } catch (_) { completed = new Set(); }
   const updateShadowProgress = () => {
@@ -105,6 +189,44 @@ $$('[data-speak]').forEach(button => {
       resetShadowButton();
       return;
     }
+    // Update the page information for the selected chapter
+const chapterNumber = String(lesson.id).padStart(2, '0');
+
+document.title = `${lesson.title} — Treasure Island English Lab`;
+
+$('#lesson-title').innerHTML =
+  `${lesson.titleBefore || lesson.title} <em>${lesson.titleAccent || ''}</em>`;
+
+$('.breadcrumbs span:last-child').textContent =
+  `Chapter ${chapterNumber}`;
+
+$('.hero-description').textContent = lesson.heroDescription || '';
+
+$('.stamp-caption').innerHTML =
+  `CHAPTER<br>${lesson.chapterLabel || chapterNumber}`;
+
+$('.book-count').textContent = `${chapterNumber} / 14`;
+
+const readingToolbar = $('.reading-toolbar span:first-child');
+if (readingToolbar) {
+  readingToolbar.textContent =
+    `FULL TEXT · BOOK PAGES ${lesson.pageStart}–${lesson.pageEnd}`;
+}
+
+const audioSource = $('#narration source');
+if (audioSource && lesson.audioPath) {
+  audioSource.src = lesson.audioPath;
+  $('#narration').load();
+}
+
+const audioTitle = $('.audio-main h3');
+if (audioTitle) audioTitle.textContent = lesson.title;
+
+const audioLabel = $('.audio-label');
+if (audioLabel) {
+  audioLabel.innerHTML =
+    `CHAPTER ${chapterNumber} <span class="audio-label-dot">•</span> FULL CHAPTER READING`;
+}
 
     shadowPlayer.pause();
     resetShadowButton();
@@ -117,7 +239,10 @@ $$('[data-speak]').forEach(button => {
 
     const number = String(Number(button.dataset.speak) + 1).padStart(2, '0');
 
-    shadowPlayer.src = `./audio/shadowing/phrase-${number}.mp3`;
+    const audioPrefix =
+  lesson.shadowingAudioPrefix || './audio/shadowing/phrase-';
+
+shadowPlayer.src = `${audioPrefix}${number}.mp3`;
     shadowPlayer.load();
 
     shadowPlayer.play().catch(() => {
