@@ -34,6 +34,19 @@ if (!lesson) return;
 ];
 
 const chapterNav = $('#future-chapters');
+  const firstChapterLink = $('.chapter-nav > .chapter-link');
+
+if (firstChapterLink) {
+  const isFirstChapter = lesson.id === 1;
+
+  firstChapterLink.classList.toggle('active', isFirstChapter);
+
+  if (isFirstChapter) {
+    firstChapterLink.setAttribute('aria-current', 'page');
+  } else {
+    firstChapterLink.removeAttribute('aria-current');
+  }
+}
   // Update selected chapter information
 const chapterNumber = String(lesson.id).padStart(2, '0');
 
