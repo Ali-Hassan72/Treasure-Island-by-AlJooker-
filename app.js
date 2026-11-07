@@ -271,69 +271,7 @@ $$('[data-speak]').forEach(button => {
 
   });
 });
-    // Update the page information for the selected chapter
-const chapterNumber = String(lesson.id).padStart(2, '0');
 
-document.title = `${lesson.title} — Treasure Island English Lab`;
-
-$('#lesson-title').innerHTML =
-  `${lesson.titleBefore || lesson.title} <em>${lesson.titleAccent || ''}</em>`;
-
-$('.breadcrumbs span:last-child').textContent =
-  `Chapter ${chapterNumber}`;
-
-$('.hero-description').textContent = lesson.heroDescription || '';
-
-$('.stamp-caption').innerHTML =
-  `CHAPTER<br>${lesson.chapterLabel || chapterNumber}`;
-
-$('.book-count').textContent = `${chapterNumber} / 14`;
-
-const readingToolbar = $('.reading-toolbar span:first-child');
-if (readingToolbar) {
-  readingToolbar.textContent =
-    `FULL TEXT · BOOK PAGES ${lesson.pageStart}–${lesson.pageEnd}`;
-}
-
-const audioSource = $('#narration source');
-if (audioSource && lesson.audioPath) {
-  audioSource.src = lesson.audioPath;
-  $('#narration').load();
-}
-
-const audioTitle = $('.audio-main h3');
-if (audioTitle) audioTitle.textContent = lesson.title;
-
-const audioLabel = $('.audio-label');
-if (audioLabel) {
-  audioLabel.innerHTML =
-    `CHAPTER ${chapterNumber} <span class="audio-label-dot">•</span> FULL CHAPTER READING`;
-}
-
-    shadowPlayer.pause();
-    resetShadowButton();
-
-    activeShadowButton = button;
-
-    button.textContent = 'Ⅱ';
-    button.classList.add('is-playing');
-    button.closest('.shadow-row')?.classList.add('is-playing');
-
-    const number = String(Number(button.dataset.speak) + 1).padStart(2, '0');
-
-    const audioPrefix =
-  lesson.shadowingAudioPrefix || './audio/shadowing/phrase-';
-
-shadowPlayer.src = `${audioPrefix}${number}.mp3`;
-    shadowPlayer.load();
-
-    shadowPlayer.play().catch(() => {
-      resetShadowButton();
-      showToast('تعذّر تشغيل هذا المقطع. أعد المحاولة.');
-    });
-
-  });
-});
   $$('[data-complete]').forEach(input => input.addEventListener('change', () => {
     const index = Number(input.dataset.complete);
     if (input.checked) completed.add(index); else completed.delete(index);
