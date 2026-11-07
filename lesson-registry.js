@@ -6,8 +6,8 @@ chapterOne.titleAccent = "Pirate";
 chapterOne.chapterLabel = "ONE";
 chapterOne.pageStart = 8;
 chapterOne.pageEnd = 11;
-chapterOne.audioPath = "/audio/the-old-pirate-original.wav";
-chapterOne.shadowingAudioPrefix = "/audio/shadowing/phrase-";
+chapterOne.audioPath = "./audio/the-old-pirate-original.wav";
+chapterOne.shadowingAudioPrefix = "./audio/shadowing/phrase-";
 chapterOne.heroDescription = "استمع إلى حكاية جيم هوكنز، وتعلّم الإنجليزية من خلال المغامرة.";
 chapterOne.illustrationsAfter = {
   "8-3": {
