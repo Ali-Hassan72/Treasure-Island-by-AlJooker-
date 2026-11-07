@@ -143,31 +143,31 @@ window.CHAPTER_02 = {
   },
   illustrationsAfter: {
     "13-7": {
-      src: "/manus-storage/async-images/CyiAifP5Bin3z1MfpRqpD1/image-1.webp",
+      src: "./images/ch02-blind-pew-at-inn.webp",
       alt: "جيم عند باب نُزُل أدميرال بنبو يرى بلاند بيو الأعمى يطلب المساعدة في الطريق",
       caption: "Blind Pew asks Jim for help outside the inn.",
       captionAr: "بلاند بيو يطلب المساعدة من جيم خارج النُزُل."
     },
     "17-4": {
-      src: "/manus-storage/async-images/CyiAifP5Bin3z1MfpRqpD1/image-3.webp",
+      src: "./images/ch02-escape.webp",
       alt: "جيم وأمه يهربان ليلًا من النُزُل ومعهما الظرف الجلدي بينما يقترب فرسان بعيدًا",
       caption: "Jim and his mother flee with the leather packet.",
       captionAr: "جيم وأمه يهربان حاملين الظرف الجلدي."
     },
     "13-4": {
-      src: "/manus-storage/async-images/gKvJZc1EHrOGnwX5TlzHgt/image-1.webp",
+      "./images/ch02-captain-warns-jim.webp",
       alt: "الكابتن يحذر جيم في غرفة النُزُل من رجال فلينت والصندوق البحري",
       caption: "The Captain warns Jim about Flint's men.",
       captionAr: "الكابتن يحذر جيم من رجال فلينت."
     },
     "16-3": {
-      src: "/manus-storage/async-images/gKvJZc1EHrOGnwX5TlzHgt/image-2.webp",
+      src: "./images/ch02-jim-mother-ask-help.webp",
       alt: "جيم وأمه يطلبان المساعدة من أهل قرية ساحلية مترددين عند الأبواب",
       caption: "Jim and his mother ask the village for help.",
       captionAr: "جيم وأمه يطلبان المساعدة من أهل القرية."
     },
     "16-11": {
-      src: "/manus-storage/async-images/gKvJZc1EHrOGnwX5TlzHgt/image-3.webp",
+      src: "./images/ch02-sea-chest.webp",
       alt: "صندوق بحري مفتوح يكشف عملات قديمة وحافظة جلدية يلتقطها جيم",
       caption: "Jim finds the leather packet in the sea-chest.",
       captionAr: "يعثر جيم على الحافظة الجلدية داخل الصندوق البحري."
@@ -175,7 +175,7 @@ window.CHAPTER_02 = {
   },
   illustrationsOnPage: {
     15: {
-      src: "/manus-storage/async-images/CyiAifP5Bin3z1MfpRqpD1/image-2.webp",
+      src: "./images/ch02-black-spot.webp",
       alt: "بلاند بيو يضع ورقة عليها بقعة سوداء في يد الكابتن أمام جيم داخل النُزُل",
       caption: "Pew gives the Captain the Black Spot.",
       captionAr: "بيو يسلم الكابتن البقعة السوداء."
