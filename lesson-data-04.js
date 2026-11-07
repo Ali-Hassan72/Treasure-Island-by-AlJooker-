@@ -7,8 +7,8 @@ window.CHAPTER_04 = {
   heroDescription: "رافق جيم من نُزُل أميرال بنبو إلى ميناء بريستول، وتعرّف إلى طباخ السفينة لونغ جون سيلفر.",
   pageStart: 21,
   pageEnd: 24,
-  audioPath: "/audio/chapter-04/the-long-john-silver-original.wav",
-  shadowingAudioPrefix: "/audio/chapter-04/shadowing/phrase-",
+  audioPath: "./audio/chapter-04/the-long-john-silver-original.wav",
+  shadowingAudioPrefix: "./audio/chapter-04/shadowing/phrase-",
   pages: [
     {
       page: 21,
