@@ -7,8 +7,8 @@ window.CHAPTER_03 = {
   heroDescription: "اكتشف خريطة كنز فلينت وتابع مع جيم هوكنز بداية الرحلة.",
   pageStart: 18,
   pageEnd: 20,
-  audioPath: "/audio/chapter-03/the-captains-papers-original.wav",
-  shadowingAudioPrefix: "/audio/chapter-03/shadowing/phrase-",
+  audioPath: "./audio/chapter-03/the-captains-papers-original.wav",
+  shadowingAudioPrefix: "./audio/chapter-03/shadowing/phrase-",
   pages: [
     { page: 18, paragraphs: [
       "The horsemen were Customs men. Customs men guarded the coast around Britain. They tried to catch anyone who broke the law. Dr Livesey had received our message and he had brought the Customs men to the inn.",
