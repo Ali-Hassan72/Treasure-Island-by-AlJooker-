@@ -217,3 +217,37 @@ body,:lang(ar){font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',sans-serif;
   font-size: 10px;
   font-weight: 700;
 }
+
+/* Chapter 4 - Embedded document layout */
+.embedded-document {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 18px;
+  margin: 18px 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+
+.embedded-document pre {
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  font: 15px/1.8 monospace;
+  margin: 14px 0;
+}
+
+@media (max-width: 700px) {
+  .embedded-document {
+    padding: 12px;
+  }
+
+  .embedded-document pre {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
