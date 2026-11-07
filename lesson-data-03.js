@@ -56,19 +56,19 @@ window.CHAPTER_03 = {
   },
   illustrationsAfter: {
     "18-0": {
-      src: "/manus-storage/async-images/jylwF2Z8wSYH4V7mUvI9Fx/image-1.webp",
+      src: "./images/ch03-customs-arrive.webp",
       alt: "وصول الدكتور ليفزي ورجال الجمارك على الخيل إلى نُزُل أميرال بنبو وجيم يراقبهم من الباب",
       caption: "The Customs men arrive at the inn.",
       captionAr: "وصول رجال الجمارك إلى النُزُل."
     },
     "18-4": {
-      src: "/manus-storage/async-images/jylwF2Z8wSYH4V7mUvI9Fx/image-2.webp",
+      src: "./images/ch03-papers-opened.webp",
       alt: "جيم يعرض الحزمة الجلدية على الدكتور ليفزي وسكواير تريلاوني ويفتحانها على الطاولة",
       caption: "The Captain’s papers are opened.",
       captionAr: "فتح أوراق الكابتن."
     },
     "20-5": {
-      src: "/manus-storage/async-images/jylwF2Z8wSYH4V7mUvI9Fx/image-3.webp",
+      src: "./images/ch03-jim-cabin-boy.webp",
       alt: "سكواير تريلاوني يخبر جيم أنه سيكون صبي المقصورة في رحلة البحث عن الكنز",
       caption: "Jim is chosen as the cabin boy.",
       captionAr: "اختيار جيم ليكون صبي المقصورة."
@@ -76,7 +76,7 @@ window.CHAPTER_03 = {
   },
   illustrationsOnPage: {
     19: {
-      src: "/manus-storage/chapter-03-captain-flint-map_10efbe62.jpg",
+      src: "./images/chapter-03-captain-flint-map.jpg",
       alt: "رسم خريطة كنز الكابتن فلينت من الصفحة المصورة 19 في الكتاب، مع الجزيرة والخليج والتل والمخزون واتجاهات البوصلة والسفينة",
       caption: "Captain Flint’s Map",
       captionAr: "خريطة الكابتن فلينت الأصلية من الكتاب."
