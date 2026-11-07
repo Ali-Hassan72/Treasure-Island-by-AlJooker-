@@ -155,7 +155,7 @@ window.CHAPTER_02 = {
       captionAr: "جيم وأمه يهربان حاملين الظرف الجلدي."
     },
     "13-4": {
-      "./images/ch02-captain-warns-jim.webp",
+      src: "./images/ch02-captain-warns-jim.webp",
       alt: "الكابتن يحذر جيم في غرفة النُزُل من رجال فلينت والصندوق البحري",
       caption: "The Captain warns Jim about Flint's men.",
       captionAr: "الكابتن يحذر جيم من رجال فلينت."
