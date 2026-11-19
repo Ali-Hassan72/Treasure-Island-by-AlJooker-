@@ -7,8 +7,8 @@ window.CHAPTER_13 = {
   heroDescription: "ينطلق جيم وسيلفر والقراصنة للبحث عن الكنز فوق تلة سباي-غلاس. لكنهم يجدون الهيكل العظمي وحفرة فارغة، قبل أن يظهر أصدقاء جيم ويكشف بن غَن أين أخفى الكنز.",
   pageStart: 51,
   pageEnd: 55,
-  audioPath: "/audio/chapter-13/the-search-for-the-treasure-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-13/shadowing/phrase-",
+  audioPath: "./audio/chapter-13/the-search-for-the-treasure-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-13/shadowing/phrase-",
   pages: [
     {
       page: 51,
@@ -148,7 +148,7 @@ window.CHAPTER_13 = {
   },
   illustrationsAfter: {
     "53-15": {
-      src: "/images/optimized/chapter-13-empty-treasure-color.webp",
+      src: "./images/optimized/chapter-13-empty-treasure-color.webp",
       alt: "جيم وسيلفر وعدد من القراصنة يكتشفون حفرة الكنز الفارغة قرب شجرة عالية في الجزيرة",
       caption: "Jim and Silver find the treasure pit empty beneath the tall tree.",
       captionAr: "يجد جيم وسيلفر حفرة الكنز فارغة تحت الشجرة الطويلة."

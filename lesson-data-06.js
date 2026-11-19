@@ -7,8 +7,8 @@ window.CHAPTER_06 = {
   heroDescription: "ينزل جيم إلى الجزيرة مع البحّارة، ويكتشف أن لونغ جون سيلفر ورفاقه قراصنة مستعدون للقتل.",
   pageStart: 28,
   pageEnd: 30,
-  audioPath: "/audio/chapter-06/the-murder-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-06/shadowing/phrase-",
+  audioPath: "./audio/chapter-06/the-murder-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-06/shadowing/phrase-",
   pages: [
     {
       page: 28,
@@ -64,7 +64,7 @@ window.CHAPTER_06 = {
   },
   illustrationsOnPage: {
     30: {
-      src: "/images/optimized/chapter-06-tom-confrontation-color.webp",
+      src: "./images/optimized/chapter-06-tom-confrontation-color.webp",
       alt: "جيم يراقب بقلق مواجهة لونغ جون سيلفر للبحّار توم على سطح السفينة",
       caption: "Jim watches anxiously as Silver confronts Tom on the ship.",
       captionAr: "يراقب جيم بقلق مواجهة سيلفر للبحّار توم على السفينة."
@@ -72,13 +72,13 @@ window.CHAPTER_06 = {
   },
   illustrationsAfter: {
     "28-6": {
-      src: "/images/optimized/chapter-06-jim-goes-ashore.webp",
+      src: "./images/optimized/chapter-06-jim-goes-ashore.webp",
       alt: "جيم ينزل من القارب إلى الشاطئ متطلعًا إلى الجزيرة",
       caption: "Jim steps ashore, eager to feel the land beneath his feet.",
       captionAr: "ينزل جيم إلى الشاطئ متشوقًا إلى أن يشعر باليابسة تحت قدميه."
     },
     "29-5": {
-      src: "/images/optimized/chapter-06-silver-and-tom.webp",
+      src: "./images/optimized/chapter-06-silver-and-tom.webp",
       alt: "لونغ جون سيلفر يتحدث إلى توم بين أشجار الجزيرة",
       caption: "Silver tries to persuade Tom to join the crew of pirates.",
       captionAr: "يحاول سيلفر إقناع توم بالانضمام إلى طاقم القراصنة."

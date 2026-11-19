@@ -7,8 +7,8 @@ window.CHAPTER_08 = {
   heroDescription: "يترك الدكتور ليفزي السفينة مع رفاقه، ويقودهم إلى المخفر الخشبي بينما يهاجمهم القراصنة من السفينة والجزيرة.",
   pageStart: 34,
   pageEnd: 38,
-  audioPath: "/audio/chapter-08/the-stockade-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-08/shadowing/phrase-",
+  audioPath: "./audio/chapter-08/the-stockade-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-08/shadowing/phrase-",
   pages: [
     {
       page: 34,
@@ -114,7 +114,7 @@ window.CHAPTER_08 = {
   },
   illustrationsOnPage: {
     37: {
-      src: "/images/optimized/chapter-08-stockade-attack-color.webp",
+      src: "./images/optimized/chapter-08-stockade-attack-color.webp",
       alt: "رفاق جيم يدافعون عن المخفر الخشبي فيما يتراجع القراصنة نحو الأدغال",
       caption: "The pirates retreat toward the jungle as Trelawney and his friends defend the stockade.",
       captionAr: "يتراجع القراصنة نحو الأدغال بينما يدافع تريلاوني ورفاقه عن المخفر."
@@ -122,13 +122,13 @@ window.CHAPTER_08 = {
   },
   illustrationsAfter: {
     "35-9": {
-      src: "/images/optimized/chapter-08-boat-under-fire.webp",
+      src: "./images/optimized/chapter-08-boat-under-fire.webp",
       alt: "رفاق الدكتور ليفزي يجدفون بقارب مزدحم نحو الجزيرة فيما تطلق هيسبانيولا المدفع",
       caption: "The overloaded boat rows for shore as the Hispaniola fires its cannon.",
       captionAr: "يجدف الرفاق بقاربهم المحمّل نحو الشاطئ بينما تطلق هيسبانيولا مدفعها."
     },
     "36-8": {
-      src: "/images/optimized/chapter-08-defend-the-stockade.webp",
+      src: "./images/optimized/chapter-08-defend-the-stockade.webp",
       alt: "السيد تريلاوني ورفاقه يدافعون عن المخفر أمام القراصنة عند حافة الأدغال",
       caption: "Trelawney and the others defend the stockade from Silver's pirates.",
       captionAr: "يدافع تريلاوني ورفاقه عن المخفر أمام قراصنة سيلفر."

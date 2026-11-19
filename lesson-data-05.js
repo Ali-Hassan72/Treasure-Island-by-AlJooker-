@@ -7,8 +7,8 @@ window.CHAPTER_05 = {
   heroDescription: "اختبئ مع جيم في برميل التفاح، واستمع إلى السر الذي يقلب رحلته على السفينة.",
   pageStart: 25,
   pageEnd: 27,
-  audioPath: "/audio/chapter-05/the-apple-barrel-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-05/shadowing/phrase-",
+  audioPath: "./audio/chapter-05/the-apple-barrel-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-05/shadowing/phrase-",
   pages: [
     {
       page: 25,
@@ -68,7 +68,7 @@ window.CHAPTER_05 = {
   },
   illustrationsOnPage: {
     26: {
-      src: "/images/optimized/chapter-05-apple-barrel-color.webp",
+      src: "./images/optimized/chapter-05-apple-barrel-color.webp",
       alt: "جيم يختبئ داخل برميل التفاح على سطح السفينة ويستمع إلى حديث البحّارة ليلًا",
       caption: "Jim hides among the apples and listens to the sailors at night.",
       captionAr: "يختبئ جيم بين التفاح ويستمع إلى البحّارة ليلًا."
@@ -76,13 +76,13 @@ window.CHAPTER_05 = {
   },
   illustrationsAfter: {
     "25-3": {
-      src: "/images/optimized/chapter-05-barrel-scene.webp",
+      src: "./images/optimized/chapter-05-barrel-scene.webp",
       alt: "جيم يختبئ بين التفاح داخل البرميل بينما يتحدث لونغ جون سيلفر على سطح السفينة",
       caption: "Jim secretly listens to Silver from inside the apple barrel.",
       captionAr: "يستمع جيم سرًا إلى حديث سيلفر من داخل برميل التفاح."
     },
     "27-1": {
-      src: "/images/optimized/chapter-05-island-moonlight.webp",
+      src: "./images/optimized/chapter-05-island-moonlight.webp",
       alt: "أفراد الطاقم يرون الجزيرة تحت ضوء القمر وجيم ينظر إلى لونغ جون سيلفر بحذر",
       caption: "The crew spots the island by moonlight.",
       captionAr: "يرى الطاقم الجزيرة تحت ضوء القمر."

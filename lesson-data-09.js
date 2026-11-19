@@ -7,8 +7,8 @@ window.CHAPTER_09 = {
   heroDescription: "يلتقي جيم هوكنز بأصدقائه في المخفر، ويشهد هجوم القراصنة ومعركتهم الأولى، ثم يغادر ليلًا لتنفيذ خطة خطرة.",
   pageStart: 39,
   pageEnd: 42,
-  audioPath: "/audio/chapter-09/the-fight-with-the-pirates-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-09/shadowing/phrase-",
+  audioPath: "./audio/chapter-09/the-fight-with-the-pirates-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-09/shadowing/phrase-",
   pages: [
     {
       page: 39,
@@ -113,19 +113,19 @@ window.CHAPTER_09 = {
   },
   illustrationsAfter: {
     "40-2": {
-      src: "/images/optimized/chapter-09-stockade-battle-color.webp",
+      src: "./images/optimized/chapter-09-stockade-battle-color.webp",
       alt: "قراصنة يقتربون من المخفر عبر حافة الأدغال فيما يحتمي أصدقاء جيم خلف السياج",
       caption: "Pirates approach from the jungle while Jim’s friends defend the stockade.",
       captionAr: "يقترب القراصنة من الأدغال بينما يدافع أصدقاء جيم عن المخفر."
     },
     "41-9": {
-      src: "/images/optimized/chapter-09-stockade-battle.webp",
+      src: "./images/optimized/chapter-09-stockade-battle.webp",
       alt: "جيم ورفاقه يدافعون عن المخفر الخشبي ضد هجوم القراصنة",
       caption: "The pirates rush the stockade as Jim and his friends defend it.",
       captionAr: "يهجم القراصنة على المخفر بينما يدافع عنه جيم ورفاقه."
     },
     "42-8": {
-      src: "/images/optimized/chapter-09-jim-leaves-stockade.webp",
+      src: "./images/optimized/chapter-09-jim-leaves-stockade.webp",
       alt: "جيم يغادر المخفر خفية عند حلول الظلام",
       caption: "Jim slips away from the stockade after dark.",
       captionAr: "يغادر جيم المخفر خفية بعد حلول الظلام."

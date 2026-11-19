@@ -7,8 +7,8 @@ window.CHAPTER_02 = {
   heroDescription: "تابع مع جيم هوكنز أسرار الكابتن وظهور البقعة السوداء.",
   pageStart: 13,
   pageEnd: 17,
-  audioPath: "/audio/chapter-02/the-black-spot-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-02/shadowing/phrase-",
+  audioPath: "./audio/chapter-02/the-black-spot-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-02/shadowing/phrase-",
   pages: [
     { page: 13, paragraphs: [
       "Dr Livesey was very kind. He helped us make arrangements for my father's funeral.",
@@ -144,7 +144,7 @@ window.CHAPTER_02 = {
   illustrationsAfter: {},
   illustrationsOnPage: {
     15: {
-      src: "/images/optimized/chapter-02-black-spot.webp",
+      src: "./images/optimized/chapter-02-black-spot.webp",
       alt: "بيو الأعمى يسلّم الكابتن ورقة عليها البقعة السوداء أمام جيم داخل النُزُل",
       caption: "Pew gives the Captain the Black Spot.",
       captionAr: "بيو يسلّم الكابتن البقعة السوداء."

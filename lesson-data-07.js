@@ -7,8 +7,8 @@ window.CHAPTER_07 = {
   heroDescription: "يلتقي جيم بالرجل الغريب بن غَن، الذي عاش وحيدًا على الجزيرة، ثم تدوي طلقات المدافع في الأفق.",
   pageStart: 31,
   pageEnd: 33,
-  audioPath: "/audio/chapter-07/the-man-on-the-island-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-07/shadowing/phrase-",
+  audioPath: "./audio/chapter-07/the-man-on-the-island-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-07/shadowing/phrase-",
   pages: [
     {
       page: 31,
@@ -70,7 +70,7 @@ window.CHAPTER_07 = {
   },
   illustrationsOnPage: {
     32: {
-      src: "/images/optimized/chapter-07-ben-gunn-meeting-color.webp",
+      src: "./images/optimized/chapter-07-ben-gunn-meeting-color.webp",
       alt: "جيم يلتقي بن غَن قرب قاربه الصغير المخفي بين أشجار الجزيرة الاستوائية",
       caption: "Jim meets Ben Gunn beside the little boat hidden in the island jungle.",
       captionAr: "يلتقي جيم بن غَن قرب قاربه الصغير المخفي بين أشجار الجزيرة."
@@ -78,13 +78,13 @@ window.CHAPTER_07 = {
   },
   illustrationsAfter: {
     "31-4": {
-      src: "/images/optimized/chapter-07-jim-meets-ben-gunn.webp",
+      src: "./images/optimized/chapter-07-jim-meets-ben-gunn.webp",
       alt: "جيم يلتقي بن غَن، الرجل الوحيد الذي عاش على الجزيرة",
       caption: "Jim meets Ben Gunn, the marooned man who has lived alone on the island.",
       captionAr: "يلتقي جيم بن غَن، الرجل الذي تُرك وحيدًا وعاش على الجزيرة."
     },
     "33-11": {
-      src: "/images/optimized/chapter-07-ben-gunns-boat.webp",
+      src: "./images/optimized/chapter-07-ben-gunns-boat.webp",
       alt: "بن غَن يشير إلى قاربه المخفي بينما يستمع إليه جيم في غابة الجزيرة",
       caption: "Ben Gunn tells Jim about the small boat he has hidden on the island.",
       captionAr: "يخبر بن غَن جيم عن القارب الصغير الذي أخفاه في الجزيرة."

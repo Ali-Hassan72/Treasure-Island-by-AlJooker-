@@ -99,7 +99,7 @@
     const chapterTitle = currentLesson?.title || title;
     if (currentLesson) {
       const active = number === chapterNumber;
-      return `<a class="chapter-link ${active ? 'active' : 'available'}" href="/?chapter=${number}" ${active ? 'aria-current="page"' : ''}><span class="chapter-number">${numberText}</span><span class="chapter-title">${chapterTitle}</span><span class="chapter-state" aria-hidden="true">${active ? '●' : '→'}</span></a>`;
+      return `<a class="chapter-link ${active ? 'active' : 'available'}" href="./?chapter=${number}" ${active ? 'aria-current="page"' : ''}><span class="chapter-number">${numberText}</span><span class="chapter-title">${chapterTitle}</span><span class="chapter-state" aria-hidden="true">${active ? '●' : '→'}</span></a>`;
     }
     return `<div class="chapter-link future" aria-disabled="true" title="سيُضاف هذا الفصل لاحقًا"><span class="chapter-number">${numberText}</span><span class="chapter-title">${title}</span><span class="chapter-state" aria-hidden="true">⌑</span></div>`;
   }).join('');

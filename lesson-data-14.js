@@ -7,8 +7,8 @@ window.CHAPTER_14 = {
   heroDescription: "يصل جيم ورفاقه إلى الكهف ويكتشفون كنز فلينت، ثم يغادرون الجزيرة وتنكشف مصائر الشخصيات. الفصل الأخير يختم حكاية الجزيرة والكنز والقرصان سيلفر.",
   pageStart: 56,
   pageEnd: 59,
-  audioPath: "/audio/chapter-14/flints-treasure-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-14/shadowing/phrase-",
+  audioPath: "./audio/chapter-14/flints-treasure-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-14/shadowing/phrase-",
   pages: [
     {
       page: 56,
@@ -79,7 +79,7 @@ window.CHAPTER_14 = {
   },
   illustrationsOnPage: {
     57: {
-      src: "/images/optimized/chapter-14-flint-treasure-color.webp",
+      src: "./images/optimized/chapter-14-flint-treasure-color.webp",
       alt: "جيم والدكتور ليفزي والسيد تريلاوني وسيلفر حول صندوق كنز فلينت المتلألئ داخل كهف بن غَن",
       caption: "Jim and his companions gather around Flint’s treasure in Ben Gunn’s cave.",
       captionAr: "يجتمع جيم ورفاقه حول كنز فلينت في كهف بن غَن."

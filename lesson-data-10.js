@@ -7,8 +7,8 @@ window.CHAPTER_10 = {
   heroDescription: "يستقل جيم القارب الصغير الذي أخفاه بن غَن، ويحاول تحرير هيسبانيولا من مرساتها وسط الليل، ثم يكتشف أن على متنها شجارًا بين رجلين.",
   pageStart: 43,
   pageEnd: 44,
-  audioPath: "/audio/chapter-10/ben-gunns-boat-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-10/shadowing/phrase-",
+  audioPath: "./audio/chapter-10/ben-gunns-boat-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-10/shadowing/phrase-",
   pages: [
     {
       page: 43,
@@ -53,13 +53,13 @@ window.CHAPTER_10 = {
   },
   illustrationsAfter: {
     "43-3": {
-      src: "/images/optimized/chapter-07-ben-gunns-boat.webp",
+      src: "./images/optimized/chapter-07-ben-gunns-boat.webp",
       alt: "القارب الصغير الذي أخفاه بن غَن قرب الشاطئ في الجزيرة",
       caption: "Ben Gunn's small boat waits on the island shore.",
       captionAr: "القارب الصغير الذي أخفاه بن غَن ينتظر قرب شاطئ الجزيرة."
     },
     "44-2": {
-      src: "/images/optimized/chapter-10-jim-spies-window-color.webp",
+      src: "./images/optimized/chapter-10-jim-spies-window-color.webp",
       alt: "جيم يتسلق حبال هيسبانيولا ليلًا ويتطلع من نافذة المقصورة المضيئة",
       caption: "Jim climbs the Hispaniola’s rigging and peers through a cabin window at night.",
       captionAr: "يتسلق جيم حبال هيسبانيولا ويتطلع من نافذة المقصورة ليلًا."

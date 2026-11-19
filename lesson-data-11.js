@@ -7,8 +7,8 @@ window.CHAPTER_11 = {
   heroDescription: "يصعد جيم إلى هيسبانيولا ويجد بحّارًا مصابًا، ثم يحاول قيادة السفينة نحو الشاطئ. يواجه قرصانًا مسلحًا ويصارع للبقاء حيًا فوق سارية السفينة.",
   pageStart: 45,
   pageEnd: 48,
-  audioPath: "/audio/chapter-11/aboard-the-hispaniola-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-11/shadowing/phrase-",
+  audioPath: "./audio/chapter-11/aboard-the-hispaniola-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-11/shadowing/phrase-",
   pages: [
     {
       page: 45,
@@ -93,7 +93,7 @@ window.CHAPTER_11 = {
   },
   illustrationsAfter: {
     "47-6": {
-      src: "/images/optimized/chapter-11-mainmast-climb-color.webp",
+      src: "./images/optimized/chapter-11-mainmast-climb-color.webp",
       alt: "جيم يتسلق السارية الرئيسية في هيسبانيولا وسط حبال السفينة وتحت سماء زرقاء",
       caption: "Jim climbs high beside the Hispaniola’s mainmast above the blue sea.",
       captionAr: "يتسلق جيم عاليًا قرب السارية الرئيسية لهيسبانيولا فوق البحر الأزرق."

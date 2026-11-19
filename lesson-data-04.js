@@ -7,8 +7,8 @@ window.CHAPTER_04 = {
   heroDescription: "رافق جيم من نُزُل أميرال بنبو إلى ميناء بريستول، وتعرّف إلى طباخ السفينة لونغ جون سيلفر.",
   pageStart: 21,
   pageEnd: 24,
-  audioPath: "/audio/chapter-04/the-long-john-silver-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-04/shadowing/phrase-",
+  audioPath: "./audio/chapter-04/the-long-john-silver-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-04/shadowing/phrase-",
   pages: [
     {
       page: 21,
@@ -23,7 +23,7 @@ window.CHAPTER_04 = {
         original: "Old Anchor Inn, Bristol,\n1 March 1756\n\nDear Dr Livesey,\n\nI have chartered a ship. The ship’s name is the Hispaniola. I have also hired a crew of twenty sailors.\n\nI have had some good luck. A ship’s cook came to see me. His name is Long John Silver. He is an excellent man. He chose the crew for me and will sail with us. A second ship will sail to Treasure Island if we do not return in two months.\n\nLong John Silver was a sailor for many years. He was badly injured in a sea battle and lost a leg. He has not sailed for some time. He got home to Bristol, but he wants to sail again.\n\nPlease come to Bristol straight away and bring Jim Hawkins.\n\nJohn Trelawney",
         translation: "نُزُل المرساة القديمة، بريستول.\n1 مارس 1756.\n\nعزيزي الدكتور ليفزي،\n\nاستأجرت سفينة. اسم السفينة هو هيسبانيولا. كما استأجرت طاقمًا من عشرين بحّارًا.\n\nلقد حالفني بعض الحظ. جاء طباخ سفينة لزيارتي. اسمه لونغ جون سيلفر. إنه رجل ممتاز. اختار الطاقم من أجلي وسيبحر معنا. ستبحر سفينة ثانية إلى جزيرة الكنز إذا لم نعد خلال شهرين.\n\nكان لونغ جون سيلفر بحّارًا لسنوات كثيرة. أُصيب إصابة بالغة في معركة بحرية وفقد ساقًا. لم يبحر منذ مدة. عاد إلى بيته في بريستول، لكنه يريد أن يبحر من جديد.\n\nأرجو أن تأتي إلى بريستول فورًا وأن تحضر جيم هوكنز.\n\nجون تريلاوني",
         image: {
-          src: "/images/optimized/chapter-04-trelawney-letter-color.webp",
+          src: "./images/optimized/chapter-04-trelawney-letter-color.webp",
           alt: "سكواير تريلاوني يكتب رسالة على ضوء الشموع في مكتبه بينما يراقبه جيم",
           caption: "Squire Trelawney writes to Dr Livesey by candlelight.",
           captionAr: "يكتب سكواير تريلاوني إلى الدكتور ليفزي على ضوء الشموع."
@@ -93,7 +93,7 @@ window.CHAPTER_04 = {
   },
   illustrationsOnPage: {
     23: {
-      src: "/images/optimized/chapter-04-silver-harbor-color.webp",
+      src: "./images/optimized/chapter-04-silver-harbor-color.webp",
       alt: "لونغ جون سيلفر بعكازه وببغائه يقف مع جيم قرب هيسبانيولا في ميناء بريستول",
       caption: "Long John Silver welcomes Jim at Bristol harbour beside the Hispaniola.",
       captionAr: "يرحب لونغ جون سيلفر بجيم في ميناء بريستول قرب سفينة هيسبانيولا."
@@ -101,13 +101,13 @@ window.CHAPTER_04 = {
   },
   illustrationsAfter: {
     "22-7": {
-      src: "/images/optimized/chapter-04-bristol-silver-scene.webp",
+      src: "./images/optimized/chapter-04-bristol-silver-scene.webp",
       alt: "جيم يلتقي لونغ جون سيلفر قرب سفينة هيسبانيولا في ميناء بريستول",
       caption: "Long John Silver welcomed Jim beside the Hispaniola in Bristol.",
       captionAr: "رحّب لونغ جون سيلفر بجيم قرب سفينة هيسبانيولا في بريستول."
     },
     "24-7": {
-      src: "/images/optimized/chapter-04-galley-parrot-scene.webp",
+      src: "./images/optimized/chapter-04-galley-parrot-scene.webp",
       alt: "جيم يعمل في مطبخ السفينة بينما يقف لونغ جون سيلفر والببغاء الكابتن فلنت قريبًا منه",
       caption: "Jim worked with Silver in the galley, beside Captain Flint the parrot.",
       captionAr: "عمل جيم مع سيلفر في مطبخ السفينة، بجوار الببغاء الكابتن فلنت."

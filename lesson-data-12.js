@@ -7,8 +7,8 @@ window.CHAPTER_12 = {
   heroDescription: "يعود جيم إلى المخفر ليلًا، فيكتشف أن القراصنة احتجزوه وأن أصدقاءه غادروا. يواجه سيلفر غضب رجاله، ويقنعهم بخطته للعثور على الكنز.",
   pageStart: 49,
   pageEnd: 50,
-  audioPath: "/audio/chapter-12/the-pirates-prisoner-original.mp3",
-  shadowingAudioPrefix: "/audio/chapter-12/shadowing/phrase-",
+  audioPath: "./audio/chapter-12/the-pirates-prisoner-original.mp3",
+  shadowingAudioPrefix: "./audio/chapter-12/shadowing/phrase-",
   pages: [
     {
       page: 49,
@@ -87,7 +87,7 @@ window.CHAPTER_12 = {
   },
   illustrationsAfter: {
     "49-8": {
-      src: "/images/optimized/chapter-12-prisoner-stockade-color.webp",
+      src: "./images/optimized/chapter-12-prisoner-stockade-color.webp",
       alt: "جيم يدخل المخفر ليلًا ويكتشف لونغ جون سيلفر والقراصنة حول نار صغيرة",
       caption: "Jim discovers Silver and the pirates inside the stockade at night.",
       captionAr: "يكتشف جيم سيلفر والقراصنة داخل المخفر ليلًا."
